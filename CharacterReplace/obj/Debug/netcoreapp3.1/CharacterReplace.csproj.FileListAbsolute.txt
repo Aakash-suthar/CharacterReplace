@@ -1,0 +1,13 @@
+C:\Users\Vishal-PC\source\repos\CharacterReplace\CharacterReplace\bin\Debug\netcoreapp3.1\CharacterReplace.exe
+C:\Users\Vishal-PC\source\repos\CharacterReplace\CharacterReplace\bin\Debug\netcoreapp3.1\CharacterReplace.deps.json
+C:\Users\Vishal-PC\source\repos\CharacterReplace\CharacterReplace\bin\Debug\netcoreapp3.1\CharacterReplace.runtimeconfig.json
+C:\Users\Vishal-PC\source\repos\CharacterReplace\CharacterReplace\bin\Debug\netcoreapp3.1\CharacterReplace.runtimeconfig.dev.json
+C:\Users\Vishal-PC\source\repos\CharacterReplace\CharacterReplace\bin\Debug\netcoreapp3.1\CharacterReplace.dll
+C:\Users\Vishal-PC\source\repos\CharacterReplace\CharacterReplace\bin\Debug\netcoreapp3.1\CharacterReplace.pdb
+C:\Users\Vishal-PC\source\repos\CharacterReplace\CharacterReplace\obj\Debug\netcoreapp3.1\CharacterReplace.csprojAssemblyReference.cache
+C:\Users\Vishal-PC\source\repos\CharacterReplace\CharacterReplace\obj\Debug\netcoreapp3.1\CharacterReplace.csproj.CoreCompileInputs.cache
+C:\Users\Vishal-PC\source\repos\CharacterReplace\CharacterReplace\obj\Debug\netcoreapp3.1\CharacterReplace.AssemblyInfoInputs.cache
+C:\Users\Vishal-PC\source\repos\CharacterReplace\CharacterReplace\obj\Debug\netcoreapp3.1\CharacterReplace.AssemblyInfo.cs
+C:\Users\Vishal-PC\source\repos\CharacterReplace\CharacterReplace\obj\Debug\netcoreapp3.1\CharacterReplace.dll
+C:\Users\Vishal-PC\source\repos\CharacterReplace\CharacterReplace\obj\Debug\netcoreapp3.1\CharacterReplace.pdb
+C:\Users\Vishal-PC\source\repos\CharacterReplace\CharacterReplace\obj\Debug\netcoreapp3.1\CharacterReplace.genruntimeconfig.cache
