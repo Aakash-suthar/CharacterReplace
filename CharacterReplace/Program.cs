@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace CharacterReplace
 {
@@ -13,48 +14,77 @@ namespace CharacterReplace
             Console.WriteLine("Enter Replace string");
             string replacestring = Console.ReadLine();
             int r = replace(original.ToCharArray(), replaces,replacestring.ToCharArray());
-            Console.WriteLine(r);
+            Console.WriteLine("Success Count : " + r);
             Console.ReadKey();
         }
-        public static int replace(char[] og,string replace,char[] replacestring) {
-            bool success = false;
-            int successcount = 0;
-            int oocuurencelength = 0;
-            int j = 0;
 
-            for (int i = 0; i < og.Length; i++)
-            {
-                if (og[i] == replace[oocuurencelength])
+        public static int replace(char[] og, string replace, char[] replacestring)
+        {
+            StringBuilder outputstring = new StringBuilder();
+            bool success = false;
+            int lengthofnewstring = replacestring.Length-1;
+            int successcount = 0;
+            int j;
+            int oocuurencelength = 0;
+
+                for (int i = 0; i < og.Length; i++)
                 {
-                    oocuurencelength++; 
-                    if (oocuurencelength - 1 == replace.Length - 1)
+                    if (og[i] == replace[oocuurencelength])
                     {
-                        oocuurencelength = oocuurencelength - 1;
-                        j = i;
-                        while (oocuurencelength >= 0)
+                        oocuurencelength++;
+                        if (oocuurencelength - 1 == replace.Length - 1)
                         {
-                            og[j] = replacestring[oocuurencelength];
-                            oocuurencelength--;
-                            j--;
+                            j = 0;
+                            while (lengthofnewstring >= 0) {
+                                outputstring.Append(replacestring[j]);
+                                lengthofnewstring--;
+                                oocuurencelength = 0;
+                                j++;
+                            }
+                            lengthofnewstring = replacestring.Length - 1;
+                            success = true;
                         }
 
-                        success = true;
+                    }
+                    else
+                    {
+                        if (oocuurencelength > 0)
+                        {
+                            j = i;
+                            while (oocuurencelength >= 0)
+                            {
+                                outputstring.Append(og[j]);
+                                j--;
+                                oocuurencelength--;
+                            }
+                        }
+                        else
+                        {
+                            outputstring.Append(og[i]);
+                        }
+                        oocuurencelength = 0;
+
+                    }
+                    if (i == og.Length - 1) {
+                        j = i+1 - oocuurencelength;
+                        while (oocuurencelength > 0)
+                        {
+                            outputstring.Append(og[j]);
+                            j++;
+                            oocuurencelength--;
+                        }
+                    }
+                    if (success == true)
+                    {
+                        successcount++;
+                        oocuurencelength = 0;
+                        success = false;
                     }
                 }
-                else { oocuurencelength = 0; }
-                if (success == true) {
-                    successcount++;
-                    oocuurencelength = 0;
-                    j = 0;
-                    success = false;
-                }
-            
-            }
-            Console.WriteLine(new String(og));
+
+            Console.WriteLine("New String : " + outputstring);
             return successcount;
         }
-
-
     }
 
 }
